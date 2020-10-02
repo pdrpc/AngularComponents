@@ -1,0 +1,40 @@
+<div class="container">
+    <div>
+        <h1 class="display-5 font-weight-bold text-center text-dark">CONSULTAR VALORES</h1>
+    </div>
+    <form>
+        <div class="row">
+            <div class="form-group col-6 offset-3 pt-1">
+                <input id="origemInput" type="text" placeholder="Origem" class="form-control p-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-6 offset-3 pt-1">
+                <input id="destinoInput" type="text" placeholder="Destino" class="form-control p-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-6 offset-3 pt-1">
+                <input id="partidaInput" type="text" placeholder="Data de Partida" class="form-control p-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-6 offset-3 pt-1">
+                <input id="voltaInput" type="text" placeholder="Data de Volta" class="form-control p-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 offset-3">
+                <button type="submit" class="btn btn-block text-light" style="background-color: #2FB1A2;" (click)="gerarValor()">Consultar</button>
+            </div>
+        </div>
+
+        <div id="valor" class="text-dark font-weight-bold text-center col-4 offset-4 border mt-4">
+             {{valor}}
+        </div>
+    </form>
+</div>
